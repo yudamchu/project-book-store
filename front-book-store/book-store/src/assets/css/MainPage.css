@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+.main-container{
+    width: 80%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 50px;
+}
+
+.today-books{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.today-books h2{
+    font-size: 38px;
+}

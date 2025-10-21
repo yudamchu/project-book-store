@@ -1,0 +1,96 @@
+@charset 'UTF-8';
+
+.mypage-usedbook{
+    width: 80%;
+    margin: 60px auto;
+    border-radius: 5px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.update-usedbook{
+    width: 100%;
+}
+
+.mypage-usedbook h2{
+    font-size: 22px;
+    font-weight: 600;
+    color:  rgb(117, 77, 211);
+    border-bottom: 2px solid  rgb(117, 77, 211);
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.mypage-usedbook button{
+    background-color:  rgb(117, 77, 211);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.usedbook-history{
+    width: 100%;
+}
+
+/* 반응형 (모바일 기준 768px 이하) */
+@media screen and (max-width: 768px) {
+
+  .mypage-usedbook {
+    width: 95%;
+    padding: 20px;
+    margin: 30px auto;
+    gap: 16px;
+  }
+
+  .mypage-usedbook h2 {
+    font-size: 18px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+  }
+
+  .mypage-usedbook button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  .update-usedbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .usedbook-history {
+    width: 100%;
+  }
+
+
+}
+
+/* 더 작은 화면 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .mypage-usedbook {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .mypage-usedbook h2 {
+    font-size: 16px;
+  }
+
+  .mypage-usedbook button {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}

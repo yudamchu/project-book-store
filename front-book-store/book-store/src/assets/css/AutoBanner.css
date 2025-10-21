@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+
+.banner-container {
+  position: relative;
+  width: 100%;                 /* 전체 화면의 80% */
+  aspect-ratio: 851 / 315;    /* 배너 비율 유지 */
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: #000;
+}
+
+.banner-slider {
+  display: flex;
+  transition: transform 0.7s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.823);
+  border: none;
+  border-radius: 30px;
+  padding: 6px 11px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+  color: rgb(105, 104, 104);
+}
+
+.controls button:hover {
+  background: rgba(255, 255, 255, 1);
+}

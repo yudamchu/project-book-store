@@ -1,0 +1,68 @@
+@charset 'UTF-8';
+
+.footer {
+  background-color: #f5f4fb;
+  color: #7C3AED;
+  padding: 40px 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  width: 100%;                    
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+.footer-logo p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu a {
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #7C3AED;               
+}
+
+.footer-bottom {
+  border-top: 1px solid #818181;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  .footer-content {
+    width: 90%;
+  }
+  .footer-menu {
+    gap: 15px;
+  }
+}

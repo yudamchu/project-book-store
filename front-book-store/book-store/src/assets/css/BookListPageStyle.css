@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+/* 전체 컨테이너 */
+.booklist-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* 카테고리 제목 */
+.category-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(64, 43, 142);
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgb(117, 77, 211);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+

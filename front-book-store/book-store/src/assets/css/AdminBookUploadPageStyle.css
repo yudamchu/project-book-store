@@ -1,0 +1,144 @@
+@charset 'UTF-8';
+
+/*  전체 컨테이너  */
+.book-upload-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Pretendard", sans-serif;
+}
+
+.book-upload-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*  입력 폼  */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  transition: border 0.2s ease;
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: #6b4eff;
+  outline: none;
+}
+
+/* 카테고리 선택  */
+.category-select {
+  display: flex;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.category-select select {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border 0.2s ease;
+}
+
+.category-select select:focus {
+  border-color: #6b4eff;
+  outline: none;
+}
+
+/* 설명 입력  */
+textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: none;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  line-height: 1.6;
+  transition: border 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #6b4eff;
+  outline: none;
+}
+
+/* 버튼 영역 */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* 등록 버튼 */
+.save-btn {
+  background-color: #6b4eff;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #5a3de0;
+  transform: translateY(-1px);
+}
+
+/* 취소 버튼 */
+.cancel-btn {
+  background-color: #e6e6e6;
+  color: #444;
+}
+
+.cancel-btn:hover {
+  background-color: #d9d9d9;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .book-upload-container {
+    padding: 30px 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-select {
+    flex-direction: column;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

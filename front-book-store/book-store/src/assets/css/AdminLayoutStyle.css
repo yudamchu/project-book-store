@@ -1,0 +1,57 @@
+@charset 'UTF-8';
+
+.table-wrapper {
+  width: 100%;   
+  overflow-x: auto;       /* 가로 스크롤 생성 */
+  -webkit-overflow-scrolling: touch; /* 모바일에서 부드러운 스크롤 */
+}
+
+.admin-layout {
+  background-color: #faf7ff;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 1500px;       /* 테이블 최소 너비 (줄어들지 않게) */
+  border-collapse: collapse;
+  white-space: nowrap;    /* 셀 줄바꿈 방지 */
+}
+
+.admin-header {
+  background-color: #6a5acd;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.admin-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-link.active {
+  background-color: white;
+  color: #6a5acd;
+}
+
+.admin-content {
+  padding: 40px 60px;
+}

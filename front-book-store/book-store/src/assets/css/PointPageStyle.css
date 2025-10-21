@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+
+
+.point-container {
+  width: 80%;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  color: #333;
+}
+
+.main-title{
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(117, 77, 211);             
+  margin-bottom: 30px;
+  border-bottom: 2px solid #A78BFA; 
+  padding-bottom: 8px;
+  text-align: center;
+}
+/* 총 포인트 영역 */
+.balance-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.balance-info h2 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.balance-info p {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(117, 77, 211);
+}
+
+/* 포인트 내역 테이블 */
+.point-history h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  font-size: 15px;
+  
+}
+
+.history-table th, .history-table td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  text-align: center;
+  
+}
+
+.history-table th {
+  background-color: rgb(117, 77, 211);
+  color: #fff;
+  font-weight: 600;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.history-table tr:hover {
+  background-color: #f0ebff;
+}
+
+/* 포인트 충전 박스 */
+.charge-bx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.charge-bx input {
+  width: 240px;
+  padding: 10px 14px;
+  border: 1.5px solid rgb(117, 77, 211);
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.charge-bx input:focus {
+  box-shadow: 0 0 0 3px rgba(117, 77, 211, 0.2);
+}
+
+.charge-bx button {
+  background-color: rgb(117, 77, 211);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.charge-bx button:hover {
+  background-color: rgb(102, 65, 190);
+}

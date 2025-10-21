@@ -1,0 +1,243 @@
+@charset 'UTF-8';
+
+.orderlist-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.orderlist-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(117, 77, 211);             
+  margin-bottom: 30px;
+  border-bottom: 2px solid #A78BFA; 
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+/* 상태 박스 */
+.status-box {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f0ff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.status-item {
+  flex: 1;
+}
+
+.status-item h3 {
+  font-size: 28px;
+  color: #6a5acd;
+  margin-bottom: 6px;
+}
+
+/* 필터 박스 */
+.filter-box {
+  background: #faf7ff;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.period-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.period-buttons button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.period-buttons button.active {
+  background: #6a5acd;
+  color: white;
+  border-color: #6a5acd;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-range input[type="date"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* 주문 리스트 */
+.order-table {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 16px;
+  border: 1px solid gainsboro;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 1fr 1.2fr 1.5fr 1.5fr;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+.table-header {
+  font-weight: 500;
+  background: #f5eaff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.table-row div {
+  text-align: center;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.track-btn,
+.review-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.track-btn {
+  background: #6a5acd;
+  color: white;
+}
+
+.review-btn {
+  background: #d7c4ff;
+  color: #333;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px 0;
+  color: #777;
+}
+
+/* 반응형 (모바일 기준 768px 이하) */
+@media screen and (max-width: 768px) {
+  .orderlist-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* 상태 박스 */
+  .status-box {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .status-item {
+    flex: 1 1 45%;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  /* 필터 박스 */
+  .filter-box {
+    gap: 8px;
+    align-items: center;
+  }
+
+  .period-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .date-range {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .date-range input[type="date"],
+  .search-button {
+    width: 100%;
+  }
+
+  /* 테이블 */
+  .order-table {
+    overflow-x: auto;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1.2fr 1.2fr;
+    font-size: 13px;
+  }
+
+  .table-header {
+    font-size: 14px;
+  }
+
+  .table-row div p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .action-btns {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .track-btn,
+  .review-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+}
+
+/* (480px 이하) */
+@media screen and (max-width: 480px) {
+  .status-item h3 {
+    font-size: 20px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1.2fr 0.8fr 0.8fr 1fr 1fr;
+  }
+}

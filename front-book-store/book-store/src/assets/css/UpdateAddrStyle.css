@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+
+.addr-update-container {
+  width: 80%;
+  margin: 60px auto;
+  padding: 32px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.addr-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 24px;
+  color: rgb(117, 77, 211);
+}
+
+.addr-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addr-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #444;
+}
+
+.addr-input {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.addr-input:focus {
+  border-color:  rgb(117, 77, 211);
+  outline: none;
+}
+
+.addr-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.addr-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color:  rgb(117, 77, 211);
+  color: white;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addr-btn:hover {
+  background-color: #5e35b1;
+}
+
+.addr-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.addr-btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.addr-submit-btn,
+.addr-cancel-btn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.addr-submit-btn {
+  background-color:  rgb(117, 77, 211);
+  color: white;
+}
+
+.addr-submit-btn:hover {
+  background-color: #5e35b1;
+}
+
+.addr-cancel-btn {
+  background-color: #eee;
+  color: #333;
+}
+
+.addr-cancel-btn:hover {
+  background-color: #ddd;
+}

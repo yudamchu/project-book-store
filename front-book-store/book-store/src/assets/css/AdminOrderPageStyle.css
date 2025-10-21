@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+
+.admin-order-container {
+  width: 80%;
+  margin: 60px auto;
+ 
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Pretendard", sans-serif;
+}
+
+.admin-order-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.admin-order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-order-table th,
+.admin-order-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-order-table th {
+  background-color: #f3edff;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.status-select:hover {
+  border-color: #6a5acd;
+}
+
+.status-select.cancel {
+  background-color: #ffeaea;
+  border-color: #e46b6b;
+  color: #c0392b;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}

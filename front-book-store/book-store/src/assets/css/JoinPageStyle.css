@@ -1,0 +1,91 @@
+@charset 'UTF-8';
+
+
+.logo{
+    color:  rgb(117, 77, 211);
+}
+
+.join-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 20px;
+}
+
+.join-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    font-size: 18px;
+    border: 1px solid rgb(236, 235, 235);
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+}
+
+.join-form label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.join-form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+.error-message{
+    color: red;
+    font-size: 14px;
+}
+
+.success-message{
+    color: green;
+    font-size: 14px;
+}
+
+.id-check-container{
+    width: 100%;
+    display: flex;
+    justify-self: space-between;
+    gap: 20px;
+}
+
+.id-check-container input{
+    flex: 5;
+}
+.id-check{
+    padding: 10px 20px;
+    background-color: rgb(117, 77, 211);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.join-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(117, 77, 211);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.join-btn:hover{
+    background-color: rgb(101, 67, 181);
+}

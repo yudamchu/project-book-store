@@ -1,0 +1,95 @@
+@charset 'UTF-8';
+
+.order-container {
+  width: 80%;
+  margin: 60px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.order-container h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.address-select {
+  margin-bottom: 24px;
+}
+
+.address-select h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.address-select select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-table th,
+.order-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.order-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.order-table input[type="number"] {
+  width: 60px;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.total-box p {
+  font-size: 18px;
+  color: #444;
+}
+
+.total-box strong {
+  font-size: 20px;
+  color: #333;
+}
+
+.total-box button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.total-box button:hover {
+  background-color: #5a4abd;
+}

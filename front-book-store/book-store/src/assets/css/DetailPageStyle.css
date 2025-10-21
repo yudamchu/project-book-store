@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+.detail-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.main-info {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.img-conatiner {
+  flex: 1;
+  max-width: 380px;
+  max-height: 540px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.65);
+  
+}
+
+.img-conatiner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  font-size: 18px;
+  color: #333;
+  padding: 0 50px;
+}
+
+.info-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  border-bottom: 3px solid #7C3AED; 
+  padding-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #666;
+  font-size: 16px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #7C3AED;
+}
+
+
+.quant {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.quant label {
+  font-weight: 600;
+  color: #444;
+}
+
+.quant button {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quant button:hover {
+  background-color: #e5e5e5;
+}
+
+.quant span {
+  font-weight: 600;
+  width: 100px;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+.btn-box {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wish-btn,
+.order-btn {
+  width: 100%;
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 장바구니 버튼 */
+.wish-btn {
+  background-color: #f3e9ff;
+  color: #333;
+}
+
+.wish-btn:hover {
+  background-color: #eddffd;
+}
+
+/* 주문 버튼 */
+.order-btn {
+  background-color: rgb(117, 77, 211);
+  color: #fff;
+}
+
+.order-btn:hover {
+  background-color: rgb(100, 56, 201);;
+}
+
+.detail-section {
+  width: 80%;
+  max-width: 1200px;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.detail-section > div {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 30px;
+  font-size: 16px;
+  color: #555;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.detail-box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.tap-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+.tap-box div{
+    flex: 1;
+    border: 1px solid gainsboro;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.tap-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* -------------------- 반응형 -------------------- */
+@media (max-width: 900px) {
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .img-conatiner {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .info-container {
+    width: 90%;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .wish-btn,
+  .order-btn {
+    width: 100%;
+  }
+
+  .detail-box div{
+    flex: 1;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+   }
+}

@@ -1,0 +1,171 @@
+@charset 'UTF-8';
+
+.addressContainer {
+  width: 80%;
+  max-width: 800px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+}
+
+/* 제목 */
+.addressContainer h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color:  rgb(117, 77, 211);
+  border-bottom: 2px solid  rgb(117, 77, 211);
+  padding-bottom: 6px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* 등록된 배송지 목록 */
+.addressList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addressCard {
+  position: relative;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+
+}
+
+.addressCard:hover {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.receiver {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+.defaultTag {
+  margin-top: 6px;
+  font-size: 14px;
+  color:  rgb(117, 77, 211);
+  font-weight: 500;
+}
+
+/* 삭제 버튼 */
+.deleteBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.deleteBtn:hover {
+  color: #e74c3c;
+}
+
+/* 수정 버튼 */
+.updateBtn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.updateBtn:hover {
+  background-color: #e5e5e5;
+}
+
+/* 배송지 등록 폼 */
+.createSection {
+  margin-top: 60px;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.createForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+  font-size: 15px;
+}
+
+.createForm input[type="text"] {
+  margin-top: 6px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.addressRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.createForm button {
+  background-color:  rgb(117, 77, 211);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.createForm button:hover {
+  background-color: #6d28d9;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: left;
+  gap: 8px;
+}
+
+.checkboxRow input{
+  align-self: self-start;
+}
+.addBtn {
+  align-self: flex-start;
+}
+
+/* 빈 상태 텍스트 */
+.emptyText {
+  text-align: center;
+  color: #aaa;
+  font-size: 15px;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  .addressContainer {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .createForm button {
+    width: 100%;
+  }
+}

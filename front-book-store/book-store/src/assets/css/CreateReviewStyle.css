@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+
+.review-form {
+  width: 80%;
+  margin: 80px auto;
+  padding: 36px 32px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 제목 */
+.review-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: rgb(117, 77, 211);
+  text-align: center;
+}
+
+/* 공통 input/select 스타일 */
+.review-select,
+.review-input,
+#descript {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  resize: none;
+}
+
+/* 포커스 시 효과 */
+.review-select:focus,
+.review-input:focus,
+#descript:focus {
+  border-color: rgb(117, 77, 211);
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(117, 77, 211, 0.15);
+}
+
+/* 텍스트 정렬 */
+.review-input,
+#descript {
+  text-align: start;
+}
+
+/* 긴 설명칸 */
+#descript {
+  min-height: 180px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+/* 등록 버튼 */
+.btn-create {
+  background-color: rgb(117, 77, 211);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+/* 버튼 hover/active */
+.btn-create:hover {
+  background-color: rgb(107, 67, 200);
+  box-shadow: 0 4px 10px rgba(117, 77, 211, 0.25);
+}
+
+.btn-create:active {
+  background-color: rgb(97, 57, 190);
+  box-shadow: none;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  .review-form {
+    width: 90%;
+    padding: 26px 20px;
+    margin: 50px auto;
+  }
+
+  .review-select,
+  .review-input,
+  #descript {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .btn-create {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,150 @@
+@charset 'UTF-8';
+
+/* 전체 컨테이너 */
+.cart-container {
+  width: 80%;
+  margin: 60px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 제목 */
+.cart-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* 테이블 기본 */
+.item-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-container thead {
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #ddd;
+}
+
+.item-container th,
+.item-container td {
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  color: #333;
+}
+
+/* 상품명 컬럼 정렬 */
+.item-container td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* 수량 입력 컨트롤 */
+.item-container input[type="number"] {
+  width: 60px;
+  height: 30px;
+  margin: 0 6px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 수량 버튼 */
+.quant-btn, .det-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.2s;
+}
+
+.quant-btn:hover, .del-btn:hover {
+  background-color: #e4e4e4;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* 전체삭제 버튼 */
+.total-del-btn{
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #565656;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: flex-start;
+}
+
+.total-del-btn:hover {
+  background-color: #e4e4e4;
+}
+
+.pay-btn{
+  display: block;
+  padding: 10px 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7947ca;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* 반응형 (모바일) */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 16px;
+  }
+
+  .item-container th, 
+  .item-container td {
+    font-size: 13px;
+    padding: 10px 4px;
+  }
+
+  .item-container input[type="number"] {
+    width: 45px;
+  }
+
+  .cart-container > button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,173 @@
+@charset 'UTF-8';
+
+/* 전체 컨테이너 */
+.usedbook-upload {
+  width: 80%;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 제목 */
+.usedbook-upload h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 라벨 및 폼 입력 */
+.usedbook-upload label {
+  display: block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.usedbook-upload input,
+.usedbook-upload select,
+.usedbook-upload textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: 0.2s ease;
+}
+
+.usedbook-upload input:focus,
+.usedbook-upload select:focus,
+.usedbook-upload textarea:focus {
+  outline: none;
+  border-color: rgb(117, 77, 211);
+  background-color: #fff;
+}
+
+.usedbook-upload textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* 파일 업로드 영역 */
+.upload-images {
+  margin-top: 25px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.upload-images input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.upload-images ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.upload-images li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.del-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.del-btn:hover {
+  background-color: #c0392b;
+}
+
+/* 등록 버튼 */
+.upload-btn{
+  display: block;
+  width: 100%;
+  background-color: rgb(117, 77, 211);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 0;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.upload-btn:hover {
+  background-color: rgb(100, 66, 187);
+}
+
+.sort-cont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px; 
+  gap: 10px;      
+}
+
+.input-cont{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.input-cont input{
+  width: 40px;
+  padding: 1px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.sort-cont button{
+  display: block;
+  width: 100%;
+  background-color: rgb(117, 77, 211);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .usedbook-upload {
+    padding: 25px;
+  }
+
+  .usedbook-upload h2 {
+    font-size: 20px;
+  }
+}

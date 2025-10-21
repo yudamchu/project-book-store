@@ -1,0 +1,235 @@
+@charset 'UTF-8';
+
+.admin-image-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 헤더  */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.header-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.back-btn {
+  padding: 8px 18px;
+  background-color: #6b4eff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.back-btn:hover {
+  background-color: #5a3de0;
+  transform: translateY(-1px);
+}
+
+/* 경고 박스  */
+.warning-box {
+  background-color: #fff3e0;
+  border-left: 6px solid #ff9800;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  color: #795548;
+  font-size: 15px;
+}
+
+.warning-box span {
+  display: block;
+  font-size: 13px;
+  color: #a16b47;
+}
+
+/* 업로드 섹션  */
+.upload-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.up-button {
+  background-color: #6b4eff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.up-button:hover {
+  background-color: #5a3de0;
+  transform: translateY(-1px);
+}
+
+/* 이미지 테이블  */
+.admin-image-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.admin-image-table th,
+.admin-image-table td {
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-image-table th {
+  background-color: #f3edff;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-image-table tr:hover {
+  background-color: #faf8ff;
+}
+
+/* 대표 이미지 행 */
+.main-image-row {
+  background-color: #f8f4ff !important;
+  border-left: 4px solid #6b4eff;
+}
+
+.main-label {
+  margin-top: 6px;
+  display: inline-block;
+  background-color: #6b4eff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.img-td{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 이미지 미리보기 */
+.book-image {
+  width: 90px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+.book-image:hover {
+  transform: scale(1.05);
+}
+
+/* 입력창 */
+.sort-input {
+  width: 60px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* 버튼들 */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.set-main-btn {
+  background-color: #6b4eff;
+  color: white;
+  border: none;
+  flex: 1;
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.set-main-btn:hover {
+  background-color: #5a3de0;
+  transform: translateY(-1px);
+}
+
+.delete-bn {
+  background-color: #ffdddd;
+  color: #c0392b;
+  padding: 6px 12px;
+  border: none;
+  flex: 1;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.delete-bn:hover {
+  background-color: #ffcccc;
+}
+
+/* 비어있을 때 */
+.empty {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-size: 15px;
+}
+
+/*  반응형  */
+@media (max-width: 768px) {
+  .admin-image-container {
+    padding: 20px;
+  }
+
+  .book-image {
+    width: 70px;
+    height: 90px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .set-main-btn,
+  .delete-btn {
+    width: 100%;
+  }
+}

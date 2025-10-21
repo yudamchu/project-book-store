@@ -1,0 +1,84 @@
+@charset 'UTF-8';
+
+.admin-point-container {
+  width: 80%;
+  margin: 60px auto;
+
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.admin-point-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.point-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group select,
+.form-group input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  min-width: 180px;
+}
+
+.charge-btn {
+  padding: 10px 18px;
+  background-color: rgb(117, 77, 211);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.charge-btn:hover {
+  background-color: rgb(99, 65, 178);
+}
+
+.admin-point-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-point-table th,
+.admin-point-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.admin-point-table th {
+  background-color: #f4f4f4;
+}
+
+.plus {
+  color: green;
+  font-weight: 600;
+}
+
+.minus {
+  color: red;
+  font-weight: 600;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 20px 0;
+}
